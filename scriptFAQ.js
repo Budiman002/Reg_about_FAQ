@@ -61,15 +61,3 @@ function close()
     document.body.style.overflowY = 'scroll';
     document.querySelector('#contactForm').reset();
 }
-
-//bad approach hahahaha
-// function formCheck(element)
-// {
-//     if(element.value)
-//     {
-//         return  true;
-//     }
-//     else{
-//         return false;
-//     }
-// }

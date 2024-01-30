@@ -52,6 +52,9 @@
   padding-bottom: 0.5rem;
 }
 
+/* clamp(.5rem,1.25rem, 1.25rem); */
+/* minimial || optimal || maksimal */
+
 .input-area input {
   width: 100%;
   background: transparent;
@@ -81,9 +84,77 @@
 }
 
 
+/* modal pop up */
+.bg-modal {
+    display:none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 50, 0.7);
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content .button {
+    background-color: rgb(221, 221, 221);
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 28px;
+    color: black;
+    margin-top: 10px;
+    display: inline-block;
+  
+    &:hover {
+      background-color: wheat;
+      color: blue;
+      border: 2px solid blue;
+    }
+  }
+  
+  .modal-content img {
+    width: 255px;
+  }
+  
+  .modal-content {
+    width: 500px;
+    height: 400px;
+    background: linear-gradient(
+      180deg,
+      rgba(9, 75, 155, 1),
+      rgba(179, 27, 164, 1)
+    );
+    border-radius: 100px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .modal-content p {
+    font-family: poppins-bold;
+    display: block;
+    margin: 15px auto;
+    color: white;
+    font-size: 1.3rem;
+  }
+  
+  .close {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    &:hover {
+      color: black;
+    }
+  }
+
 @media only screen and (max-width: 800px){
     main{
         display: flex;
         flex-direction: column;
     }
 }
+

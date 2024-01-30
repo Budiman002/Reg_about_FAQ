@@ -20,7 +20,12 @@
             </p>
           </div>
 
-          <form action="#" method="post" class="register-form">
+          <form
+            action="/register.html"
+            method="post"
+            class="register-form"
+            onsubmit="return false"
+          >
             <label for="email">Email</label>
             <div class="input-area">
               <img src="icon/email.png" alt="" />
@@ -29,6 +34,7 @@
                 name="email"
                 id="email"
                 placeholder="Your email"
+                required
               />
             </div>
 
@@ -40,6 +46,7 @@
                 name="username"
                 id="username"
                 placeholder="Your username"
+                required
               />
             </div>
 
@@ -51,6 +58,7 @@
                 name="password"
                 id="password"
                 placeholder="your password"
+                required
               />
               <img src="icon/eyes_closed.png" class="pass-visibility" alt="" />
             </div>
@@ -63,6 +71,7 @@
                 name="confirm-password"
                 id="confirm-password"
                 placeholder="confirm your password"
+                required
               />
               <img src="icon/eyes_closed.png" class="pass-visibility" alt="" />
             </div>
@@ -72,5 +81,15 @@
         </div>
       </div>
     </main>
+
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div class="close">+</div>
+        <img src="icon/Check-list.png" alt="" />
+        <p>Congratulations, Your account has been successfully created</p>
+        <a href="" class="button">OK</a>
+      </div>
+    </div>
+    <script src="script_Reg.js"></script>
   </body>
 </html>
