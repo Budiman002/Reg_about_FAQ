@@ -1,20 +1,79 @@
 @import url("style_util.css");
 
 /* styling gambar */
-.image{
-    float: left;
-    max-height: 100vh;
+.image {
+  float: left;
+  max-height: 100vh;
 }
 
-.form-container{
-    min-height: 100vh;
-    align-items: center;
+.form-container {
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-.wrapper{
-    max-width: 80%;
-    text-align: left;
-    flex-wrap: nowrap;
-    gap: 2rem 0;
+.wrapper {
+  max-width: 80%;
+  text-align: left;
+  flex-wrap: nowrap;
+  gap: 2.5rem 0;
+  box-sizing: border-box;
+  margin: 0 4rem;
+  font-family: poppins-reg;
 }
 
+.sign-up {
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+}
+
+.sign-up a {
+  color: #c10c99;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.register-form label {
+  font-size: 0.8125rem;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 0.75rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+}
+
+.input-area input {
+  width: 100%;
+  background: transparent;
+  color: white;
+}
+
+.input-area input:focus {
+  outline: none;
+}
+
+.pass-visibility {
+  cursor: pointer;
+}
+
+#submit-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 50px;
+  font-size: 20px;
+  color: white;
+  margin-top: 1.5rem;
+  mix-blend-mode: screen;
+  background: var(--gradient-btn);
+  font-family: poppins-bold;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
