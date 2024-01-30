@@ -1,0 +1,20 @@
+@import url("style_util.css");
+
+/* styling gambar */
+.image{
+    float: left;
+    max-height: 100vh;
+}
+
+.form-container{
+    min-height: 100vh;
+    align-items: center;
+}
+
+.wrapper{
+    max-width: 80%;
+    text-align: left;
+    flex-wrap: nowrap;
+    gap: 2rem 0;
+}
+

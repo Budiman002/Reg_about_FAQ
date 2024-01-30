@@ -1,0 +1,106 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  --dark-blue: rgb(19, 20, 30, 0.3);
+  --background-primary: linear-gradient(to top, #13141e 0%, #090d30 100%);
+  --gradient-primary: linear-gradient(
+    to left,
+    rgba(0, 179, 218, 1),
+    rgba(229, 6, 219, 1)
+  );
+  --gradient-btn: linear-gradient(
+    to left,
+    rgba(9, 75, 155, 1),
+    rgba(179, 27, 164, 1)
+  );
+  --gradient-eclipse: linear-gradient(
+    rgba(29, 159, 219, 1),
+    rgba(119, 10, 157, 0.5),
+    rgba(33, 20, 33, 0.42)
+  );
+  --gradient-faq: linear-gradient(
+    to left,
+    rgba(0, 179, 218, 1),
+    rgba(9, 75, 155, 1)
+  );
+}
+
+@font-face {
+  font-family: poppins-bold;
+  src: url(Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: poppins-reg;
+  src: url(Poppins/Poppins-Regular.ttf);
+}
+
+body {
+  background: var(--background-primary);
+  min-height: 100vh;
+  width: auto;
+  color: #ffffff;
+  font-family: poppins-reg;
+}
+
+/* default general container*/
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: poppins-bold;
+}
+
+.nav-main {
+  background: var(--darkblue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #f1f1f2;
+  background-color: var(--dark-blue);
+}
+
+.dipsi {
+  font-style: italic;
+}
+
+.dipsi h2 {
+  font-size: 30px;
+  font-family: poppins-bold;
+}
+
+.dipsi p {
+  font-size: 12px;
+}
+
+.home ul li {
+  list-style: none;
+}
+
+.home ul li a {
+  text-decoration: none;
+  /* untuk ilangin underline pada link */
+  color: #f1f1f2;
+}
+
+.home ul li a:active {
+  font-family: poppins-bold;
+}
+
+.home ul li a:hover {
+  font-family: poppins-bold;
+}
+
+.home ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home {
+  width: 46.25rem;
+  font-size: 30px;
+}
