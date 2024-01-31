@@ -6,6 +6,22 @@
   float: left;
   max-height: 100vh;
   max-width: 100vw;
+  filter:brightness(45%);
+}
+
+.gradient-light{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: -2;
+    left: 0.5rem;
+    right: 0;
+    top: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: radial-gradient(#5c177c, #a136d3);
+    filter: blur(8rem);
+    display: flex;
 }
 
 .form-container {
